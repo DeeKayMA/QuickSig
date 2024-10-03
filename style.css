@@ -1,0 +1,364 @@
+/* You like what you see huh */ 
+
+
+
+/* -------------- GLOBAL -----------------*/
+
+:root{
+
+    /* -------------- COLOUR VARIABLE -----------------*/
+    --blue1: #32328D;
+    --blue2: #2A2779;
+    --blue3: #211C65;
+    --blue4: #181251;
+
+    --froly1: #FA8796;
+    --froly2: #E06271;
+    --froly3: #CA4655;
+    --froly4: #B02F3C;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Makes REM easier to manager*/
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+body {
+    font-size: 1.6rem; /* 16px base font-size */
+    font-family: poppins;
+    color: #fff;
+}
+
+.generator{
+    display: grid;
+    grid-template-areas: 
+        "input topbar"
+        "input preview"
+        "input footer";
+
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 10.0rem auto 8.0rem;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/* -------------- TOP BAR -----------------*/
+header{
+    grid-area: topbar;
+    background-color: var(--blue1);
+    align-items: center;
+    justify-content: center;
+    padding: 1.6rem;
+    flex-direction: column;
+}
+.title{
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;;
+}
+
+.subtitle{
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* -------------- INPUT SECTION  -----------------*/
+.input-section{
+    grid-area: input;
+    background-color: var(--blue4);
+    height:100%;
+    overflow: hidden;
+}
+
+nav{
+    height: 7.5rem; 
+    width: 100%;
+    background-color: #fff;
+    border-radius: 1.5rem;
+
+}
+
+nav button{
+    height:100%;
+    flex: 1;
+    flex-wrap: wrap;
+    border-radius: 0%;
+    border: none;
+    background-color: var(--blue1);
+    color: white;
+    border-right: 0.1rem solid var(--blue4);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+nav button:hover{
+    background-color: var(--blue2);
+    cursor: pointer;
+}
+
+nav button.active{
+    background-color: var(--blue4);  
+}
+
+nav button svg {
+    margin-bottom: 0.8rem;
+    
+}
+
+
+.input-fields{
+    padding:4.0rem;
+    height: calc(100% - 3.2rem);
+    overflow:auto;
+    gap: 2.0rem;
+    flex-direction: column;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    gap: 2.0rem;
+
+}
+
+
+/* -------------- PREVIEW SECTION  -----------------*/
+.preview-section{
+    grid-area: preview;
+    padding: 3.2rem 6.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.0rem;
+    background-color: var(--blue1);
+    color: #333;
+
+}
+
+/* -------------- BROWSER WINDOW  -----------------*/
+
+.browser-window {
+    width: 100%;
+    height: calc(100% - 3.2rem);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    /*border: 1px solid #ccc;*/
+    /*background-color: white;*/
+    background-image: linear-gradient(rgba(255, 255, 255, 0), white);
+    box-shadow: 0 0 2.0rem rgba(0, 0, 0, 0.1);
+}
+
+.toolbar {
+    background-color: #333;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.toolbar-buttons {
+    display: flex;
+    gap: 0.8rem;
+    margin-left: 0.8rem
+}
+
+.toolbar-buttons span {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+}
+
+.close {
+    background-color: #FF605C;
+}
+
+.minimize {
+    background-color: #FFBD44;
+}
+
+.maximize {
+    background-color: #00CA4E;
+}
+.email-info{
+    display:flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.recipient{
+    background-color: #d4f0f2;
+    border-radius:3.2rem;
+    padding:0.2rem 0.8rem;
+    border: 0.1rem solid #56c3bb;
+}
+
+.divider{
+    padding-top: 0.8rem;
+    margin-bottom: 1.6rem;
+    border-bottom: 0.1rem #ccc solid
+}
+
+.content {
+    height: calc(100% - 3.2rem); /* Adjust height to fill the rest of the div */
+    background-color: white;
+    padding: 2.0rem;
+    border-radius: 0 0 1.5rem 1.5rem;
+}
+.sig-prev{
+    height:calc(100% - 6.4rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.copy-btns{
+    gap: 1.6rem;
+}
+
+.copy-btn{
+    border-radius: 0.8rem;
+    border: none;
+    padding: 1.6rem 2.4rem;
+    width: 200px;
+}
+#copy-sig-btn{
+    background-color: var(--froly3);
+    color: #fff;
+}
+
+#copy-sig-btn:hover{
+    background-color: var(--froly4);
+    cursor: pointer;
+}
+
+#copy-src-btn{
+    border: solid 0.1rem #fff;
+    background-color: var(--blue1);
+    color: white;
+}
+#copy-src-btn:hover{
+    background-color: var(--blue2);
+    cursor: pointer;
+
+}
+
+
+
+/* -------------- FOOTER -----------------*/
+footer{
+    grid-area: footer;
+    background-color: var(--blue1);
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+a.diquan{
+    margin-left: 0.4rem;
+    color: white;
+}
+
+
+
+/* -------------- VISIBILITY -----------------*/
+.isHidden{
+    display: none;
+}
+
+.isVisible{
+    visibility:visible
+}
+
+
+/* -------------- MOBILE RESPONSIVENESS -----------------*/
+
+@media only screen and (max-width:768px) {
+    /*----- GLOBAL  ----*/
+    body{
+        background-color: var(--blue1);
+    }
+
+    .generator{
+        display: grid;
+        grid-template-areas: 
+            "topbar"
+            "input"
+            "preview"
+            "footer";
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 15.0rem auto auto 7.0rem;
+        gap: 0;
+        height: auto;
+    }
+
+     /*----- PREVIEW SECTION ----*/
+     .preview-section{
+        padding: 3.2rem 1.6rem;
+     }
+
+    /*----- COPY BUTTONS----*/
+    .copy-btns{
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copy-btn{
+        border-radius: 0.8rem;
+        border: none;
+        padding: 1.6rem 2.4rem;
+        width:100%
+
+    }
+    header{
+        background-color: var(--blue4);
+    }
+    .input-section, .preview-section, footer{
+        background-color: var(--blue1);
+    }
+    nav button{
+        background-color: var(--blue4);  
+    }
+
+
+    nav button.active{
+        background-color: var(--blue1);  
+    }
+
+    nav{
+        background-color: var(--blue4);
+    }
+    nav button{
+        border-radius: 0.8rem 0.8rem 0 0;
+    }
+
+    .sig-prev{
+        height:auto;
+    }
+
+}

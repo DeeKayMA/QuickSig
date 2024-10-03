@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Free Email Signature Generator by QuickSig </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="generator">
+        <!--TOPBAR-->
+        <header class="header flex">
+            <h1 class="title">QuickSig</h1>
+            <h2 class="subtitle">Free Email Signature Generator</h2>
+        </header>
+        <!--INPUT-->
+        <section class="input-section">
+             <!--NAV-->
+            <nav class="style-nav flex">
+                <button class="active flex" id="template-btn">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.667 5.833H3.333a1.667 1.667 0 0 0 -1.667 1.667v8.333a1.667 1.667 0 0 0 1.667 1.667h13.333a1.667 1.667 0 0 0 1.667 -1.667V7.5a1.667 1.667 0 0 0 -1.667 -1.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.333 17.5V4.167a1.667 1.667 0 0 0 -1.667 -1.667h-3.333a1.667 1.667 0 0 0 -1.667 1.667v13.333" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <p>Template</p>
+                </button>
+                <button id="detail-btn" class="flex">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.667 1.667H5a1.667 1.667 0 0 0 -1.667 1.667v13.333a1.667 1.667 0 0 0 1.667 1.667h10a1.667 1.667 0 0 0 1.667 -1.667V6.667z" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M11.667 1.667v5h5" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.333 10.833H6.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.333 14.167H6.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.333 7.5H6.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <p>Detail</p>
+                </button>
+                <button id="style-btn" class="flex">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.167 2.5a2.356 2.356 0 1 1 3.333 3.333L6.25 17.083 1.667 18.333l1.25 -4.583z" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <p>Style</p>
+                </button>
+                <button id="images-btn" class="flex">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.833 2.5H4.167a1.667 1.667 0 0 0 -1.667 1.667v11.667a1.667 1.667 0 0 0 1.667 1.667h11.667a1.667 1.667 0 0 0 1.667 -1.667V4.167a1.667 1.667 0 0 0 -1.667 -1.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M7.083 8.333a1.25 1.25 0 1 0 0 -2.5 1.25 1.25 0 0 0 0 2.5" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="m17.5 12.5 -4.167 -4.167L4.167 17.5" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <p>Images</p>
+                </button>
+            </nav>
+             <!--INPUT FIELDS-->
+            <div class="input-fields flex">
+                 <!--TEMPLATE-->
+                <div id="template-div">
+                    Template Div
+                </div>
+                 <!--DETAIL-->
+                <div id="detail-div" class="isHidden flex-col">
+                    <p> Enter Your Signature Details</p>
+                    <label for="name">Full Name</label>
+                    <input id="name" type="text" name="name" placeholder="Joe Bloggs">
+                    <label for="job">Job Title</label>
+                    <input id="job" type="text" name="job" placeholder="Product Manager">
+                    <label for="job">Department</label>
+                    <input id="department" type="text" name="department" placeholder="Tech and Innovation">
+                    <label for="job">Company</label>
+                    <input id="company" type="text" name="company" placeholder="Meta">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="text" name="phone" placeholder="1111 2222 333">
+                    <label for="website">Website URL</label>
+                    <input id="website" type="text" name="website" placeholder="www.meta.com">
+                    <label for="email">Email Address</label>
+                    <input id="email" type="text" name="email" placeholder="joe.bloggs@meta.com">
+                    <label for="address">Address</label>
+                    <input id="address1" type="text" name="address1" placeholder="1 Hackker Way">
+                    <input id="address2" type="text" name="address2" placeholder="Melno Park">
+                    <input id="address2" type="text" name="address2" placeholder="CA US">
+
+                    <p> Enter Your Social Links</p>
+                    <label for="linkedin-url">LinkedIn</label>
+                    <input id="linkedin-url" type="text" name="linkedin-url" placeholder="www.linkedin.com/in/joebloggs">
+
+                    <label for="facebook-url">Facebook</label>
+                    <input id="facebook-url" type="text" name="facebook-url" placeholder="www.facebook.com/joebloggs">
+
+                    <label for="twitter-url">Twitter</label>
+                    <input id="twitter-url" type="text" name="twitter-url" placeholder="www.twitter.com/joebloggs">
+
+                    <label for="instagram-url">Instagram</label>
+                    <input id="instagram-url" type="text" name="instagram-url" placeholder="www.instagram.com/joebloggs">
+                    
+                </div>
+                 <!--STYLE-->
+                <div id="style-div" class="isHidden">
+                    Style Div
+                </div>
+                 <!--IMAGES-->
+                <div id="images-div" class="isHidden">
+                    Images Div
+                </div>
+                
+            </div>
+        </section>
+        <!--PREVIEW / OUTPUT -->
+        <section class="preview-section"> 
+            <div class="browser-window">
+                <div class="toolbar">
+                    <div class="toolbar-buttons">
+                        <span class="close"></span>
+                        <span class="minimize"></span>
+                        <span class="maximize"></span>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="email-info">
+                        <p> To: <span class="recipient"> Your Recipient</span></p>
+                        <p> Subject: Check out my new email signatutre</p>
+                        <div class="divider"></div>
+                    </div>
+                    <div class="sig-prev">
+                        <div>Sig 1</div>
+                        <div>Sig 2</div>
+                        <div>Sig 3</div>
+                        <div>Sig 4</div>
+                        <div>Sig 5</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="copy-btns flex">
+                <button class="copy-btn" id="copy-sig-btn">Copy signature</button>
+                <button class="copy-btn" id="copy-src-btn">Copy source code</button>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer class="footer flex">Built with 🧡 by<a href="https://www.linkedin.com/in/diquankerr" class="diquan"> Diquan</a></footer>
+    </div>
+	<script src="script.js"></script>
+  </body>
+</html>
