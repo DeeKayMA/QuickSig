@@ -357,6 +357,14 @@ a.diquan{
         border-radius: 0.8rem 0.8rem 0 0;
     }
 
+    nav button #template-btn{
+        border-radius: 0 0.8rem 0 0;
+    }
+
+    nav button #images-btn{
+        border-radius: 0.8rem 0 0 0;
+    }
+
     .sig-prev{
         height:auto;
     }
