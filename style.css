@@ -142,6 +142,27 @@ nav button svg {
 
 }
 
+.next-prev-btns{
+    width:100%;
+    gap: 1.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-prev-btns button{
+    width: 50%;
+    border-radius: 0.8rem;
+    border: none;
+    padding: 1.6rem 2.4rem;
+    cursor:pointer;
+    margin: 3.2rem 0;
+}
+
+#next-btn-template, #prev-btn-images{
+    width:100%;
+}
+
+
 
 /* -------------- PREVIEW SECTION  -----------------*/
 .preview-section{
@@ -289,6 +310,10 @@ a.diquan{
     display: none;
 }
 
+.isNotVisible{
+    visibility: hidden;
+}
+
 .isVisible{
     visibility:visible
 }
@@ -367,6 +392,12 @@ a.diquan{
 
     .sig-prev{
         height:auto;
+    }
+
+
+
+    #next-btn-images{
+        display: block;
     }
 
 }

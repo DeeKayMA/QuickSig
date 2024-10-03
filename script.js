@@ -12,9 +12,17 @@ let detailDiv = document.getElementById('detail-div');
 let styleDiv = document.getElementById('style-div');
 let imagesDiv = document.getElementById('images-div');
 
+let nextBtnTemplate = document.getElementById('next-btn-template');
+let prevBtnDetail = document.getElementById('prev-btn-detail');
+let nextBtnDetail = document.getElementById('next-btn-detail');
+let prevBtnStyle = document.getElementById('prev-btn-style');
+let nextBtnStyle = document.getElementById('next-btn-style');
+let prevBtnImages = document.getElementById('prev-btn-images');
+let nextBtnImages = document.getElementById('next-btn-images');
+
 // Check for clik events on the nav 
 
-// TEMPATE BUTTON //
+// TEMPLATE BUTTON //
 
 templateBtn.addEventListener('click', function() {
     const buttons = [detailBtn, styleBtn, imagesBtn];
@@ -31,6 +39,7 @@ templateBtn.addEventListener('click', function() {
         divs.forEach(div => div.classList.add('isHidden'));
     }
 });
+
 
 
 // DETAIL BUTTON //
@@ -83,4 +92,60 @@ imagesBtn.addEventListener('click', function() {
         imagesDiv.classList.remove('isHidden');
         divs.forEach(div => div.classList.add('isHidden'));
     }
+});
+
+
+// NEXT & PREV Buttons for each NAV DIV
+
+//Next button for template page 
+nextBtnTemplate.addEventListener('click', function(){
+    templateBtn.classList.remove('active');
+    templateDiv.classList.add('isHidden');
+
+    detailBtn.classList.add('active');
+    detailDiv.classList.remove('isHidden');
+});
+
+//Back & Next buttons for details page
+prevBtnDetail.addEventListener('click', function(){
+    templateBtn.classList.add('active');
+    templateDiv.classList.remove('isHidden');
+    
+    detailBtn.classList.remove('active');
+    detailDiv.classList.add('isHidden');
+});
+
+nextBtnDetail.addEventListener('click', function(){
+    detailBtn.classList.remove('active');
+    detailDiv.classList.add('isHidden');
+
+    styleBtn.classList.add('active');
+    styleDiv.classList.remove('isHidden');
+});
+
+//Back & Next buttons for style page
+prevBtnStyle.addEventListener('click', function(){
+    detailBtn.classList.add('active');
+    detailDiv.classList.remove('isHidden');
+    
+    styleBtn.classList.remove('active');
+    styleDiv.classList.add('isHidden');
+});
+
+nextBtnStyle.addEventListener('click', function(){
+    styleBtn.classList.remove('active');
+    styleDiv.classList.add('isHidden');
+
+    imagesBtn.classList.add('active');
+    imagesDiv.classList.remove('isHidden');
+});
+
+//Back & Next buttons for images page
+
+prevBtnImages.addEventListener('click', function(){
+    styleBtn.classList.add('active');
+    styleDiv.classList.remove('isHidden');
+    
+    imagesBtn.classList.remove('active');
+    imagesDiv.classList.add('isHidden');
 });
