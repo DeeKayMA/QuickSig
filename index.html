@@ -42,52 +42,54 @@
              <!--INPUT FIELDS-->
             <div class="input-fields flex">
                  <!--TEMPLATE-->
-                <div id="template-div">
+                <div id="template-div" class="flex-col template-div">
                     Template Div
                     <div class="next-prev-btns flex-row">
                         <button class="next-btn flex" id="next-btn-template"><a href="#navbar">Next</a></button>
                     </div>
                 </div>
                  <!--DETAIL-->
-                <div id="detail-div" class="isHidden flex-col">
-                    <p> Enter Your Signature Details</p>
-                    <label for="name">Full Name</label>
-                    <input id="name" type="text" name="name" placeholder="Joe Bloggs">
-                    <label for="job">Job Title</label>
-                    <input id="job" type="text" name="job" placeholder="Product Manager">
-                    <label for="job">Department</label>
-                    <input id="department" type="text" name="department" placeholder="Tech and Innovation">
-                    <label for="job">Company</label>
-                    <input id="company" type="text" name="company" placeholder="Meta">
-                    <label for="phone">Phone Number</label>
-                    <input id="phone" type="text" name="phone" placeholder="1111 2222 333">
-                    <label for="website">Website URL</label>
-                    <input id="website" type="text" name="website" placeholder="www.meta.com">
-                    <label for="email">Email Address</label>
-                    <input id="email" type="text" name="email" placeholder="joe.bloggs@meta.com">
-                    <label for="address">Address</label>
-                    <input id="address1" type="text" name="address1" placeholder="1 Hackker Way">
-                    <input id="address2" type="text" name="address2" placeholder="Melno Park">
-                    <input id="address2" type="text" name="address2" placeholder="CA US">
-                
+                <div id="detail-div" class="isHidden flex-col detail-div">
+                    <div class="flex-col">
+                        <h3> Enter Your Signature Details</h3>
+                        <label for="name">Full Name</label>
+                        <input class="input" id="name" type="text" name="name" placeholder="Joe Bloggs">
+                        <label for="job">Job Title</label>
+                        <input class="input" id="job" type="text" name="job" placeholder="Product Manager">
+                        <label for="job">Department</label>
+                        <input class="input" id="department" type="text" name="department" placeholder="Tech and Innovation">
+                        <label for="job">Company</label>
+                        <input class="input" id="company" type="text" name="company" placeholder="Meta">
+                        <label for="phone">Phone Number</label>
+                        <input class="input" id="phone" type="text" name="phone" placeholder="1111 2222 333">
+                        <label for="website">Website URL</label>
+                        <input class="input" id="website" type="text" name="website" placeholder="www.meta.com">
+                        <label for="email">Email Address</label>
+                        <input class="input" id="email" type="text" name="email" placeholder="joe.bloggs@meta.com">
+                        <label for="address">Address</label>
+                        <input class="input" id="address1" type="text" name="address1" placeholder="1 Hackker Way">
+                        <input class="input" id="address2" type="text" name="address2" placeholder="Melno Park">
+                        <input class="input" id="address2" type="text" name="address2" placeholder="CA US">
+                    </div>
+                    <div class="flex-col">
+                        <h3> Enter Your Social Links</h3>
+                        <label for="linkedin-url">LinkedIn</label>
+                        <input class="input" id="linkedin-url" type="text" name="linkedin-url" placeholder="www.linkedin.com/in/joebloggs">
 
-                    <p> Enter Your Social Links</p>
-                    <label for="linkedin-url">LinkedIn</label>
-                    <input id="linkedin-url" type="text" name="linkedin-url" placeholder="www.linkedin.com/in/joebloggs">
+                        <label for="facebook-url">Facebook</label>
+                        <input class="input" id="facebook-url" type="text" name="facebook-url" placeholder="www.facebook.com/joebloggs">
 
-                    <label for="facebook-url">Facebook</label>
-                    <input id="facebook-url" type="text" name="facebook-url" placeholder="www.facebook.com/joebloggs">
+                        <label for="twitter-url">Twitter</label>
+                        <input class="input" id="twitter-url" type="text" name="twitter-url" placeholder="www.twitter.com/joebloggs">
 
-                    <label for="twitter-url">Twitter</label>
-                    <input id="twitter-url" type="text" name="twitter-url" placeholder="www.twitter.com/joebloggs">
-
-                    <label for="instagram-url">Instagram</label>
-                    <input id="instagram-url" type="text" name="instagram-url" placeholder="www.instagram.com/joebloggs">
-                    
-                    <p> Custom Field</p>
-                    <label for="custom-field">Instagram</label>
-                    <input id="custom-field" type="text" name="custom-field" placeholder="Anything you want">
-
+                        <label for="instagram-url">Instagram</label>
+                        <input class="input" id="instagram-url" type="text" name="instagram-url" placeholder="www.instagram.com/joebloggs">
+                    </div>
+                    <div class="flex-col">
+                        <h3> Custom Field</h3>
+                        <label for="custom-field">Instagram</label>
+                        <input class="input" id="custom-field" type="text" name="custom-field" placeholder="Anything you want">
+                    </div>
                     <div class="next-prev-btns flex-row">
                         <button class="prev-btn flex" id="prev-btn-detail">
                             <a href="#navbar">Back</a>
@@ -98,7 +100,7 @@
                     </div>
                 </div>
                  <!--STYLE-->
-                <div id="style-div" class="isHidden">
+                <div id="style-div" class="isHidden style-div">
                     Style Div
                     <div class="next-prev-btns flex-row">
                         <button class="prev-btn flex" id="prev-btn-style"><a href="#navbar">Back</a></button>
@@ -106,7 +108,7 @@
                     </div>
                 </div>
                  <!--IMAGES-->
-                <div id="images-div" class="isHidden">
+                <div id="images-div" class="isHidden flex-col images-div">
                     Images Div
                     <div class="next-prev-btns flex-row">
                         <button class="prev-btn flex" id="prev-btn-images"><a href="#navbar">Back</a></button>
