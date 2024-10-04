@@ -21,7 +21,7 @@
         <!--INPUT-->
         <section class="input-section">
              <!--NAV-->
-            <nav class="style-nav flex">
+            <nav class="style-nav flex" id="navbar">
                 <button class="active flex" id="template-btn">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.667 5.833H3.333a1.667 1.667 0 0 0 -1.667 1.667v8.333a1.667 1.667 0 0 0 1.667 1.667h13.333a1.667 1.667 0 0 0 1.667 -1.667V7.5a1.667 1.667 0 0 0 -1.667 -1.667" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.333 17.5V4.167a1.667 1.667 0 0 0 -1.667 -1.667h-3.333a1.667 1.667 0 0 0 -1.667 1.667v13.333" stroke="currentColor" stroke-width="1.6666666666666667" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     <p>Template</p>
@@ -45,7 +45,7 @@
                 <div id="template-div">
                     Template Div
                     <div class="next-prev-btns flex-row">
-                        <button class="next-btn" id="next-btn-template">Next</button>
+                        <button class="next-btn flex" id="next-btn-template"><a href="#navbar">Next</a></button>
                     </div>
                 </div>
                  <!--DETAIL-->
@@ -89,23 +89,27 @@
                     <input id="custom-field" type="text" name="custom-field" placeholder="Anything you want">
 
                     <div class="next-prev-btns flex-row">
-                        <button class="prev-btn" id="prev-btn-detail">Back</button>
-                        <button class="next-btn" id="next-btn-detail">Next</button>
+                        <button class="prev-btn flex" id="prev-btn-detail">
+                            <a href="#navbar">Back</a>
+                        </button>
+                        <button class="next-btn flex" id="next-btn-detail">
+                            <a href="#navbar">Next</a>
+                        </button>
                     </div>
                 </div>
                  <!--STYLE-->
                 <div id="style-div" class="isHidden">
                     Style Div
                     <div class="next-prev-btns flex-row">
-                        <button class="prev-btn" id="prev-btn-style">Back</button>
-                        <button class="next-btn" id="next-btn-style">Next</button>
+                        <button class="prev-btn flex" id="prev-btn-style"><a href="#navbar">Back</a></button>
+                        <button class="next-btn flex" id="next-btn-style"><a href="#navbar">Next</a></button>
                     </div>
                 </div>
                  <!--IMAGES-->
                 <div id="images-div" class="isHidden">
                     Images Div
                     <div class="next-prev-btns flex-row">
-                        <button class="prev-btn" id="prev-btn-images">Back</button>
+                        <button class="prev-btn flex" id="prev-btn-images"><a href="#navbar">Back</a></button>
                     </div>
                 </div>
                 

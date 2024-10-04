@@ -34,6 +34,7 @@ body {
     color: #fff;
 }
 
+
 .generator{
     display: grid;
     grid-template-areas: 
@@ -152,10 +153,22 @@ nav button svg {
 .next-prev-btns button{
     width: 50%;
     border-radius: 0.8rem;
-    border: none;
-    padding: 1.6rem 2.4rem;
+    border: solid 0.1rem #fff;
     cursor:pointer;
-    margin: 3.2rem 0;
+    gap:0.8rem;
+    font-size: 1.6rem;
+    margin: 3.2rem 0 6.4rem 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 1.6rem 2.4rem;
+    color:#fff;
+
+
+}
+.next-prev-btns button a{
+    text-decoration: none;
+    color: currentColor;
 }
 
 #next-btn-template, #prev-btn-images{
@@ -266,6 +279,7 @@ nav button svg {
     border: none;
     padding: 1.6rem 2.4rem;
     width: 200px;
+    font-size: 1.6rem;
 }
 #copy-sig-btn{
     background-color: var(--froly3);
@@ -279,7 +293,7 @@ nav button svg {
 
 #copy-src-btn{
     border: solid 0.1rem #fff;
-    background-color: var(--blue1);
+    background-color: rgba(0, 0, 0, 0);
     color: white;
 }
 #copy-src-btn:hover{
@@ -361,25 +375,26 @@ a.diquan{
 
     }
     header{
-        background-color: var(--blue4);
-    }
-    .input-section, .preview-section, footer{
         background-color: var(--blue1);
     }
+    .input-section, .preview-section, footer{
+        background-color: var(--blue4);
+    }
     nav button{
-        background-color: var(--blue4);  
+        background-color: var(--blue1);  
     }
 
 
     nav button.active{
-        background-color: var(--blue1);  
+        background-color: var(--blue4);  
     }
 
     nav{
-        background-color: var(--blue4);
+        background-color: var(--blue1);
     }
     nav button{
         border-radius: 0.8rem 0.8rem 0 0;
+        border:none;
     }
 
     nav button #template-btn{
