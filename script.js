@@ -2,6 +2,8 @@
 
 //Get buttons & div areas
 
+let navbar = document.getElementById("navbar");
+
 let templateBtn = document.getElementById('template-btn');
 let detailBtn = document.getElementById('detail-btn');
 let styleBtn = document.getElementById('style-btn');
@@ -104,6 +106,9 @@ nextBtnTemplate.addEventListener('click', function(){
 
     detailBtn.classList.add('active');
     detailDiv.classList.remove('isHidden');
+
+   // window.location.href = "#navbar";
+    navbar.scrollIntoView({ behavior: 'smooth' });
 });
 
 //Back & Next buttons for details page
@@ -113,6 +118,10 @@ prevBtnDetail.addEventListener('click', function(){
     
     detailBtn.classList.remove('active');
     detailDiv.classList.add('isHidden');
+
+    //window.location.href = "#navbar";
+    navbar.scrollIntoView({ behavior: 'smooth' });
+
 });
 
 nextBtnDetail.addEventListener('click', function(){
@@ -121,6 +130,10 @@ nextBtnDetail.addEventListener('click', function(){
 
     styleBtn.classList.add('active');
     styleDiv.classList.remove('isHidden');
+
+    //window.location.href = "#navbar";
+    navbar.scrollIntoView({ behavior: 'smooth' });
+
 });
 
 //Back & Next buttons for style page
@@ -130,6 +143,10 @@ prevBtnStyle.addEventListener('click', function(){
     
     styleBtn.classList.remove('active');
     styleDiv.classList.add('isHidden');
+
+    //window.location.href = "#navbar";
+    navbar.scrollIntoView({ behavior: 'smooth' });
+
 });
 
 nextBtnStyle.addEventListener('click', function(){
@@ -138,6 +155,10 @@ nextBtnStyle.addEventListener('click', function(){
 
     imagesBtn.classList.add('active');
     imagesDiv.classList.remove('isHidden');
+
+    //window.location.href = "#navbar";
+    navbar.scrollIntoView({ behavior: 'smooth' });
+
 });
 
 //Back & Next buttons for images page
@@ -148,4 +169,10 @@ prevBtnImages.addEventListener('click', function(){
     
     imagesBtn.classList.remove('active');
     imagesDiv.classList.add('isHidden');
+
+    //window.location.href = "#style-div";
+   navbar.scrollIntoView({ behavior: 'smooth' });
+
+   
+
 });

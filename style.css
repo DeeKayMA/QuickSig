@@ -177,12 +177,6 @@ nav button svg {
 }
 
 
-
-.next-prev-btns button a{
-    text-decoration: none;
-    color: currentColor;
-}
-
 #next-btn-template, #prev-btn-images{
     width:100%;
 }
@@ -216,7 +210,22 @@ input::placeholder{
 }
 
 .input-section label{
-    /*font-size: 1.6rem;*/
+    margin-bottom: 0.8rem;;
+}
+
+.template{
+    width: 100%;
+    margin-bottom: 4.0rem;
+
+}
+
+.template p {
+    margin-bottom: 0.8rem;;
+}
+
+.active-template svg{
+    border: solid 0.4rem var(--froly3);
+    border-radius: 0.8rem;
 }
 
 
