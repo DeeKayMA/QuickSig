@@ -275,10 +275,15 @@ input::placeholder {
 }
 
 .colour-selector-div {
-    align-items: start;
+    align-items: center;
+    justify-content: space-between;
     gap: 0.4rem;
     width: 100%;
     margin-bottom: 4.0rem;
+    padding: 1.6rem;
+    border: 0.1rem solid #ffffff45;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
 }
 
 #textColourInputText,
@@ -292,8 +297,8 @@ input[type="color"] {
     -moz-appearance: none;
     border: none;
     border-radius: 0.8rem;
-    width:4.8rem;
-    height: 4.8rem;
+    height: 3.2rem;
+    width: 3.2rem;
     cursor: pointer;
 }
 
@@ -302,7 +307,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 }
 
 input[type="color"]::-webkit-color-swatch {
-    border: 0.1rem solid /*#565282 var(--blue1)*/ white;
+    border: solid 0.1rem #fff;
     border-radius: 0.8rem;
 }
 
