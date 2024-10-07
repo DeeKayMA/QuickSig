@@ -1,10 +1,10 @@
-/* You like what you see huh */ 
+/* You like what you see huh */
 
 
 
 /* -------------- GLOBAL -----------------*/
 
-:root{
+:root {
 
     /* -------------- COLOUR VARIABLE -----------------*/
     --blue1: #32328D;
@@ -18,7 +18,9 @@
     --froly4: #B02F3C;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -26,18 +28,21 @@
 
 /* -- Makes REM easier to manager*/
 html {
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
+
 body {
-    font-size: 1.6rem; /* 16px base font-size */
+    font-size: 1.6rem;
+    /* 16px base font-size */
     font-family: "Poppins", sans-serif;
     color: #fff;
 }
 
 
-.generator{
+.generator {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "input topbar"
         "input preview"
         "input footer";
@@ -47,15 +52,16 @@ body {
     height: 100vh;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-col{
+.flex-col {
     display: flex;
     flex-direction: column;
 }
-.flex-row{
+
+.flex-row {
     display: flex;
     flex-direction: row;
 }
@@ -64,7 +70,7 @@ body {
 
 
 /* -------------- TOP BAR -----------------*/
-header{
+header {
     grid-area: topbar;
     background-color: var(--blue1);
     align-items: center;
@@ -72,35 +78,37 @@ header{
     padding: 1.6rem;
     flex-direction: column;
 }
-.title{
+
+.title {
     font-size: 2.2rem;
-    margin-bottom: 0.8rem;;
+    margin-bottom: 0.8rem;
+    ;
 }
 
-.subtitle{
+.subtitle {
     font-size: 1.6rem;
     font-weight: normal;
     text-align: center;
 }
 
 /* -------------- INPUT SECTION  -----------------*/
-.input-section{
+.input-section {
     grid-area: input;
     background-color: var(--blue4);
-    height:100%;
+    height: 100%;
     overflow: hidden;
 }
 
-nav{
-    height: 7.5rem; 
+nav {
+    height: 7.5rem;
     width: 100%;
     background-color: #fff;
     border-radius: 0rem;
 
 }
 
-nav button{
-    height:100%;
+nav button {
+    height: 100%;
     flex: 1;
     flex-wrap: wrap;
     border-radius: 0%;
@@ -114,48 +122,48 @@ nav button{
     flex-direction: column;
 }
 
-nav button:hover{
+nav button:hover {
     background-color: var(--blue2);
     cursor: pointer;
 }
 
-nav button.active{
-    background-color: var(--blue4);  
+nav button.active {
+    background-color: var(--blue4);
 }
 
 nav button svg {
     margin-bottom: 0.8rem;
-    
+
 }
 
 
-.input-fields{
-    padding:3.2rem;
+.input-fields {
+    padding: 3.2rem;
     height: calc(100% - 3.2rem);
-    overflow:auto;
+    overflow: auto;
     gap: 2.0rem;
     flex-direction: column;
 }
 
-.input-div{
+.input-div {
     display: flex;
     flex-direction: column;
     gap: 2.0rem;
 
 }
 
-.next-prev-btns{
-    width:100%;
+.next-prev-btns {
+    width: 100%;
     gap: 1.6rem;
     align-items: center;
     justify-content: center;
 }
 
-.next-prev-btns button{
+.next-prev-btns button {
     width: 50%;
     border-radius: 0.8rem;
-    cursor:pointer;
-    gap:0.8rem;
+    cursor: pointer;
+    gap: 0.8rem;
     font-size: 1.6rem;
     margin-bottom: 3.2rem;
     align-items: center;
@@ -164,119 +172,146 @@ nav button svg {
 
 
 }
-.next-btn{
+
+.next-btn {
     background-color: var(--froly3);
     color: white;
     border: none;
 }
 
-.prev-btn{
+.prev-btn {
     background-color: white;
     color: black;
     border: none;
 }
 
 
-#next-btn-template, #prev-btn-images{
-    width:100%;
+#next-btn-template,
+#prev-btn-images {
+    width: 100%;
 }
 
-.template-div, .detail-div, .style-div, .images-div{
+.template-div,
+.detail-div,
+.style-div,
+.images-div {
     gap: 3.2rem;
 }
 
-.input{
+.input {
     background-color: var(--blue4);
     color: #fff;
-    padding:1.6rem;
+    padding: 1.6rem;
     border: 0.1rem solid #ffffff45;
     border-radius: 0.8rem;
     font-size: 1.6rem;
-    margin: 0.4rem 0 2.4rem 0 ;
+    margin: 0.4rem 0 2.4rem 0;
 }
-input:focus{
+
+input:focus {
     outline: none;
     border: 1px solid white;
 }
 
-input::placeholder{
+input::placeholder {
     color: #ffffff45
 }
 
-.input-section h3{
+.input-section h3 {
     font-size: 2.0rem;
     font-weight: 600;
     margin-bottom: 2.0rem;
 }
 
-.input-section label{
-    margin-bottom: 0.8rem;;
+.input-section label {
+    margin-bottom: 0.8rem;
+    ;
 }
 
 /*TEMPLATE*/
 
-.template{
+.template {
     width: 100%;
     margin-bottom: 4.0rem;
 
 }
 
 .template p {
-    margin-bottom: 0.8rem;;
+    margin-bottom: 0.8rem;
+    ;
 }
 
-.active-template svg{
+.active-template svg {
     border: solid 0.4rem var(--froly3);
     border-radius: 0.8rem;
 }
 
 /*Style*/
 
-.input-dropdown-div{
+.input-dropdown-div {
     background-color: var(--blue4);
     color: #fff;
     border: 0.1rem solid #ffffff45;
     border-radius: 0.8rem;
     font-size: 1.6rem;
-    margin: 0.4rem 0 4.0rem 0 ;
+    margin: 0.4rem 0 4.0rem 0;
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
     padding-right: 1.6rem;
 }
-#font-dropdown{
+
+#font-dropdown {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background-color: rgba(0, 0, 0, 0);
     border: none;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     color: #fff;
     font-family: "Poppins", sans-serif;
-    padding:1.6rem;
+    padding: 1.6rem;
 }
 
-.colour-selector-div, .hex-div{
-    align-items: center;
+.colour-selector-div {
+    align-items: left;
     justify-content: left;
-    gap: 1.6rem;
-    width:100%;
-}
-
-#themeColourInputText, #textColourInputText, #linkColourInputText{
-    margin-bottom: 0rem;
-    width:100%
-}
-
-.colour-selcetor-out-div{
+    gap: 0.4rem;
+    width: 100%;
     margin-bottom: 4.0rem;
 }
+
+#textColourInputText,
+#linkColourInputText {
+    margin-bottom: 0rem;
+    width: 100%
+}
+
+input[type="color"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 0.8rem;
+    width:4.8rem;
+    height: 4.8rem;
+    cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: 0.1rem solid /*#565282 var(--blue1)*/ white;
+    border-radius: 0.8rem;
+}
+
 
 
 
 /* -------------- PREVIEW SECTION  -----------------*/
-.preview-section{
+.preview-section {
     grid-area: preview;
     padding: 3.2rem 6.4rem;
     display: flex;
@@ -335,66 +370,72 @@ input::placeholder{
 .maximize {
     background-color: #00CA4E;
 }
-.email-info{
-    display:flex;
+
+.email-info {
+    display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
 
-.recipient{
+.recipient {
     background-color: #d4f0f2;
-    border-radius:3.2rem;
-    padding:0.2rem 0.8rem;
+    border-radius: 3.2rem;
+    padding: 0.2rem 0.8rem;
     border: 0.1rem solid #56c3bb;
 }
 
-.divider{
+.divider {
     padding-top: 0.8rem;
     margin-bottom: 1.6rem;
     border-bottom: 0.1rem #ccc solid
 }
 
 .content {
-    height: calc(100% - 3.2rem); /* Adjust height to fill the rest of the div */
+    height: calc(100% - 3.2rem);
+    /* Adjust height to fill the rest of the div */
     background-color: white;
     padding: 2.0rem;
     border-radius: 0 0 1.5rem 1.5rem;
 }
-.sig-prev{
-    height:calc(100% - 6.4rem);
+
+.sig-prev {
+    height: calc(100% - 6.4rem);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 }
-.copy-btns{
+
+.copy-btns {
     gap: 1.6rem;
 }
 
-.copy-btn{
+.copy-btn {
     border-radius: 0.8rem;
     border: none;
     padding: 1.6rem 2.4rem;
     width: 200px;
     font-size: 1.6rem;
 }
-#copy-sig-btn{
+
+#copy-sig-btn {
     background-color: var(--froly3);
     color: #fff;
 }
 
-#copy-sig-btn:hover{
+#copy-sig-btn:hover {
     background-color: var(--froly4);
     cursor: pointer;
 }
 
-#copy-src-btn{
+#copy-src-btn {
     border: solid 0.1rem #fff;
     background-color: rgba(0, 0, 0, 0);
     color: white;
 }
-#copy-src-btn:hover{
+
+#copy-src-btn:hover {
     background-color: var(--blue2);
     cursor: pointer;
 
@@ -403,14 +444,15 @@ input::placeholder{
 
 
 /* -------------- FOOTER -----------------*/
-footer{
+footer {
     grid-area: footer;
     background-color: var(--blue1);
     align-items: center;
     justify-content: center;
     color: white;
 }
-a.diquan{
+
+a.diquan {
     margin-left: 0.4rem;
     color: white;
 }
@@ -418,90 +460,97 @@ a.diquan{
 
 
 /* -------------- VISIBILITY -----------------*/
-.isHidden{
+.isHidden {
     display: none;
 }
 
-.isNotVisible{
+.isNotVisible {
     visibility: hidden;
 }
 
-.isVisible{
-    visibility:visible
+.isVisible {
+    visibility: visible
 }
 
 
 /* -------------- MOBILE RESPONSIVENESS -----------------*/
 
 @media only screen and (max-width:768px) {
+
     /*----- GLOBAL  ----*/
-    body{
+    body {
         background-color: var(--blue1);
     }
 
-    .generator{
+    .generator {
         display: grid;
-        grid-template-areas: 
+        grid-template-areas:
             "topbar"
             "input"
             "preview"
             "footer";
-    
+
         grid-template-columns: 1fr;
         grid-template-rows: 15.0rem auto auto 7.0rem;
         gap: 0;
         height: auto;
     }
 
-     /*----- PREVIEW SECTION ----*/
-     .preview-section{
+    /*----- PREVIEW SECTION ----*/
+    .preview-section {
         padding: 3.2rem 1.6rem;
-     }
+    }
 
     /*----- COPY BUTTONS----*/
-    .copy-btns{
-        width:100%;
+    .copy-btns {
+        width: 100%;
         flex-direction: column;
         align-items: center;
     }
-    
-    .copy-btn{
+
+    .copy-btn {
         border-radius: 0.8rem;
         border: none;
         padding: 1.6rem 2.4rem;
-        width:100%
-
+        width: 100%
     }
-    #copy-src-btn:hover{
+
+    #copy-src-btn:hover {
         background-color: rgba(0, 0, 0, 0);
         cursor: pointer;
-    
+
     }
-    #copy-sig-btn:hover{
+
+    #copy-sig-btn:hover {
         background-color: var(--froly3);
         cursor: pointer;
     }
 
 
-    header{
+    header {
         background-color: var(--blue1);
     }
-    .input-section, .preview-section, footer{
+
+    .input-section,
+    .preview-section,
+    footer {
         background-color: var(--blue4);
     }
-    nav button{
-        background-color: var(--blue1);  
-    }
 
-
-    nav button.active{
-        background-color: var(--blue4);  
-    }
-
-    nav{
+    nav button {
         background-color: var(--blue1);
     }
-    nav button{
+
+
+    nav button.active {
+        background-color: var(--blue4);
+    }
+
+    nav {
+        background-color: var(--blue1);
+    }
+
+    nav button {
         /*border-radius: 0.8rem 0.8rem 0 0;
         border:none;*/
     }
@@ -514,29 +563,29 @@ a.diquan{
         border-radius: 0.8rem 0 0 0;
     }*/
 
-    .sig-prev{
-        height:auto;
+    .sig-prev {
+        height: auto;
     }
 
 
 
-    #next-btn-images{
+    #next-btn-images {
         display: block;
     }
 
-    .input-fields{
-        padding:3.2rem 1.6rem;
+    .input-fields {
+        padding: 3.2rem 1.6rem;
     }
 
 }
 
 @media only screen and (min-width:768px) {
 
-    .next-btn:hover{
+    .next-btn:hover {
         background-color: var(--froly4);
     }
 
-    .prev-btn:hover{
+    .prev-btn:hover {
         background-color: #d0d3d4;
     }
 }
