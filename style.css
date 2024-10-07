@@ -213,6 +213,8 @@ input::placeholder{
     margin-bottom: 0.8rem;;
 }
 
+/*TEMPLATE*/
+
 .template{
     width: 100%;
     margin-bottom: 4.0rem;
@@ -226,6 +228,49 @@ input::placeholder{
 .active-template svg{
     border: solid 0.4rem var(--froly3);
     border-radius: 0.8rem;
+}
+
+/*Style*/
+
+.input-dropdown-div{
+    background-color: var(--blue4);
+    color: #fff;
+    border: 0.1rem solid #ffffff45;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    margin: 0.4rem 0 4.0rem 0 ;
+    gap: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1.6rem;
+}
+#font-dropdown{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width:100%;
+    height:100%;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding:1.6rem;
+}
+
+.colour-selector-div, .hex-div{
+    align-items: center;
+    justify-content: left;
+    gap: 1.6rem;
+    width:100%;
+}
+
+#themeColourInputText, #textColourInputText, #linkColourInputText{
+    margin-bottom: 0rem;
+    width:100%
+}
+
+.colour-selcetor-out-div{
+    margin-bottom: 4.0rem;
 }
 
 
