@@ -275,8 +275,7 @@ input::placeholder {
 }
 
 .colour-selector-div {
-    align-items: left;
-    justify-content: left;
+    align-items: start;
     gap: 0.4rem;
     width: 100%;
     margin-bottom: 4.0rem;
