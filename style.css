@@ -228,6 +228,7 @@ input::placeholder {
     ;
 }
 
+
 /*TEMPLATE*/
 
 .template {
@@ -258,7 +259,7 @@ input::placeholder {
     gap: 0.8rem;
     align-items: center;
     justify-content: center;
-    padding-right: 1.6rem;
+    position:relative;
 }
 
 #font-dropdown {
@@ -272,6 +273,14 @@ input::placeholder {
     color: #fff;
     font-family: "Poppins", sans-serif;
     padding: 1.6rem;
+    z-index: 1;
+}
+
+#dropdown-chevron{
+    position:absolute;
+    z-index:2;
+    right: 1.6rem;
+    pointer-events: none;
 }
 
 .colour-selector-div {
