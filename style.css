@@ -274,6 +274,7 @@ input::placeholder {
     font-family: "Poppins", sans-serif;
     padding: 1.6rem;
     z-index: 1;
+    font-size: 1.6rem;
 }
 
 #dropdown-chevron{
@@ -319,6 +320,44 @@ input[type="color"]::-webkit-color-swatch {
     border: solid 0.1rem #fff;
     border-radius: 0.8rem;
 }
+
+input[type="range"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height:0.2rem;
+    background-color: white;
+    margin: 1.6rem 0  ;
+    width:100%;
+}
+
+input[type='range']::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: var(--froly3);
+    border: solid 0.2rem white;
+    border-radius: 100%;
+}
+
+#fs-slider-output{
+
+ 
+}
+
+.fs-div{
+    text-align: center;
+    background-color: var(--blue4);
+    color: #fff;
+    padding: 1.6rem;
+    border: 0.1rem solid #ffffff45;
+    border-radius: 0.8rem;
+    font-size: 1.6rem;
+    margin: 0.4rem 0 2.4rem 0;
+    align-items: center;
+    gap: 0.8rem;
+}
+
 
 
 

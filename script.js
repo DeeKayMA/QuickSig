@@ -22,6 +22,9 @@ let nextBtnStyle = document.getElementById('next-btn-style');
 let prevBtnImages = document.getElementById('prev-btn-images');
 let nextBtnImages = document.getElementById('next-btn-images');
 
+const fsSlider = document.getElementById('fs-slider');
+let fsOutput = document.getElementById('fs-slider-output')
+
 // Check for clik events on the nav 
 
 // TEMPLATE BUTTON //
@@ -176,3 +179,19 @@ prevBtnImages.addEventListener('click', function(){
    
 
 });
+
+//Change value for font size slider output based on slide value & change font size of templates
+
+fsSlider.addEventListener('input', function(){
+    let fontSize = fsSlider.value + 'rem';
+
+    if (fontSize === "1.6rem"){
+        fsOutput.value = "Medium"
+    } else if ( fontSize === "1.2rem"){
+        fsOutput.value = "Small"
+    } else if (fontSize === "2rem" ){
+        fsOutput.value = "Large"
+    } else {
+        fsOutput.value = "Medium"
+    };
+})

@@ -409,19 +409,19 @@
                         <h3>Stylise Your Signature</h3>
                         <div class="colour-selector-div flex-row">
                             <p>Theme Colour</p>
-                                <input type="color" class="colour-selector" id="themeColourSelector" value="#CA4655">
+                            <input type="color" class="colour-selector" id="themeColourSelector" value="#CA4655">
                         </div>
                         <div class="colour-selector-div flex-row">
                             <p>Text Colour</p>
-                                <input type="color" class="colour-selector" id="textColourSelector" value="#222">
+                            <input type="color" class="colour-selector" id="textColourSelector" value="#222">
                         </div>
                         <div class="colour-selector-div flex-row">
                             <p>Link Colour</p>
-                                <input type="color" class="colour-selector" id="linkColourSelector" value="#CA4655">
+                            <input type="color" class="colour-selector" id="linkColourSelector" value="#CA4655">
                         </div>
                         <div class="flex-col ">
                             <label>Font</label>
-                            <div class="input-dropdown-div flex-row" >
+                            <div class="input-dropdown-div flex-row">
                                 <select id="font-dropdown">
                                     <option>Arial</option>
                                     <option>Courier New</option>
@@ -432,15 +432,22 @@
                                     <option>Trebuchet MS</option>
                                     <option>Verdana</option>
                                 </select>
-                                <svg id="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                                <svg id="dropdown-chevron" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
                             </div>
                         </div>
                         <div class="flex-col">
                             <label>Font Size</label>
-                            <input type="range" min="1.2" max="2.0" step="0.4" class="input">
+                                <div class="fs-div flex-col">
+                                    <input type="range" min="1.2" max="2.0" step="0.4" value="1.6" id="fs-slider">
+                                    <output class="flex" for="fs-slider" id="fs-slider-output">Medium</output>
+                                </div>
+                            
+                            <!-- oninput="this.nextElementSibling.value = this.value"-->
                         </div>
-
-
 
 
                     </div>
