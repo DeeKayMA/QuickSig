@@ -191,6 +191,10 @@ nav button svg {
     width: 100%;
 }
 
+#next-btn-images{
+    display: none;
+}
+
 .template-div,
 .detail-div,
 .style-div,
@@ -226,6 +230,12 @@ input::placeholder {
 .input-section label {
     margin-bottom: 0.8rem;
     ;
+}
+
+/* IMAGES*/
+
+.images-info{
+    margin-bottom: 4.0rem;
 }
 
 
@@ -583,9 +593,7 @@ a.diquan {
         background-color: var(--blue1);
     }
 
-    .input-section,
-    .preview-section,
-    footer {
+    .input-section{
         background-color: var(--blue4);
     }
 
@@ -621,7 +629,8 @@ a.diquan {
 
 
 
-    #next-btn-images {
+    #prev-btn-images, #next-btn-images {
+        width:50%;
         display: block;
     }
 

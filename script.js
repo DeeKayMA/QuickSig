@@ -3,6 +3,7 @@
 //Get buttons & div areas
 
 let navbar = document.getElementById("navbar");
+let preview = document.getElementById("browser-window");
 
 let templateBtn = document.getElementById('template-btn');
 let detailBtn = document.getElementById('detail-btn');
@@ -176,7 +177,10 @@ prevBtnImages.addEventListener('click', function(){
     //window.location.href = "#style-div";
    navbar.scrollIntoView({ behavior: 'smooth' });
 
-   
+});
+
+nextBtnImages.addEventListener('click', function(){
+   preview.scrollIntoView({ behavior: 'smooth' });
 
 });
 

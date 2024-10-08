@@ -83,7 +83,7 @@
                 <!--TEMPLATE-->
                 <div id="template-div" class="flex-col template-div">
                     <div class="flex-col">
-                        <h3> Select a template</h3>
+                        <h3> Select Template</h3>
                         <div class="template active-template">
                             <p>Template 1</p>
                             <!--<img src="/assets/template-1.svg">-->
@@ -353,7 +353,7 @@
                 <!--DETAIL-->
                 <div id="detail-div" class="isHidden flex-col detail-div">
                     <div class="flex-col">
-                        <h3> Enter Your Signature Details</h3>
+                        <h3> Enter Signature Details</h3>
                         <label for="name">Full Name</label>
                         <input class="input" id="name" type="text" name="name" placeholder="Joe Bloggs">
                         <label for="job">Job Title</label>
@@ -406,7 +406,7 @@
                 <!--STYLE-->
                 <div id="style-div" class="isHidden style-div flex-col">
                     <div class="flex-col">
-                        <h3>Stylise Your Signature</h3>
+                        <h3>Style Signature</h3>
                         <div class="colour-selector-div flex-row">
                             <p>Theme Colour</p>
                             <input type="color" class="colour-selector" id="themeColourSelector" value="#CA4655">
@@ -441,11 +441,11 @@
                         </div>
                         <div class="flex-col">
                             <label>Font Size</label>
-                                <div class="fs-div flex-col">
-                                    <input type="range" min="1.2" max="2.0" step="0.4" value="1.6" id="fs-slider">
-                                    <output class="flex" for="fs-slider" id="fs-slider-output">Medium</output>
-                                </div>
-                            
+                            <div class="fs-div flex-col">
+                                <input type="range" min="1.2" max="2.0" step="0.4" value="1.6" id="fs-slider">
+                                <output class="flex" for="fs-slider" id="fs-slider-output">Medium</output>
+                            </div>
+
                             <!-- oninput="this.nextElementSibling.value = this.value"-->
                         </div>
 
@@ -459,69 +459,39 @@
                 </div>
                 <!--IMAGES-->
                 <div id="images-div" class="isHidden flex-col images-div">
-                    Images Div
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
-                    <p> Spacer</p>
+                    <div class="flex-col">
+                        <h3>Upload Signature Images</h3>
+                        <p class="images-info">Add your profile photo or logo to enhance your email signature! Grab your file from your own hosted website or internet search.</p>
+
+                        <label for="profile-pic">Profile Picture</label>
+                        <input class="input" id="profile-pic" type="text" name="profile-pic" placeholder="https://www.example.com/images/profile-pic">
+
+                        <label for="comp-logo">Company Logo</label>
+                        <input class="input" id="comp-logo" type="text" name="comp-logo" placeholder="https://www.example.com/images/company-logo">
+
+                        <h3>Create a Custom CTA </h3>
+                        <label for="cta-copy">CTA Copy</label>
+                        <input class="input" id="cta-copy" type="text" name="cta-copy" placeholder="Find Out More">
+
+                        <label for="cta-url">CTA URL</label>
+                        <input class="input" id="cta-url" type="text" name="cta-url" placeholder="www.quicksig.com">
+
+                        <div class="colour-selector-div flex-row">
+                            <p>CTA Colour</p>
+                            <input type="color" class="colour-selector" id="themeColourSelector" value="#CA4655">
+                        </div>
+
+                        <div class="colour-selector-div flex-row">
+                            <p>CTA Text Colour</p>
+                            <input type="color" class="colour-selector" id="themeColourSelector" value="#CA4655">
+                        </div>
+                    </div>
+
+
+
                     <div class="next-prev-btns flex-row">
                         <button class="prev-btn flex" id="prev-btn-images">Back</button>
+                        <button class="next-btn flex" id="next-btn-images"> Next</button>
                     </div>
                 </div>
 
@@ -529,7 +499,7 @@
         </section>
         <!--PREVIEW / OUTPUT -->
         <section class="preview-section" id="preview-section">
-            <div class="browser-window">
+            <div class="browser-window" id="browser-window">
                 <div class="toolbar">
                     <div class="toolbar-buttons">
                         <span class="close"></span>
