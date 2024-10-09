@@ -34,14 +34,42 @@ const template4 = document.getElementById('template4');
 const template5 = document.getElementById('template5');
 const template6 = document.getElementById('template6');
 
-//Class for hidden paths
+//Create array for hidden paths
+const template1Paths = [
+    document.getElementById('temp1-path1'), 
+    document.getElementById('temp1-path2'), 
+    document.getElementById('temp1-path3')
+]
+const template2Paths = [
+    document.getElementById('temp2-path1'), 
+    document.getElementById('temp2-path2'), 
+    document.getElementById('temp2-path3')
+]
+const template3Paths = [
+    document.getElementById('temp3-path1'), 
+    document.getElementById('temp3-path2'), 
+    document.getElementById('temp3-path3')
+]
+const template4Paths = [
+    document.getElementById('temp4-path1'), 
+    document.getElementById('temp4-path2'), 
+    document.getElementById('temp4-path3')
+]
+const template5Paths = [
+    document.getElementById('temp5-path1'), 
+    document.getElementById('temp5-path2'), 
+    document.getElementById('temp5-path3')
+]
+const template6Paths = [
+    document.getElementById('temp6-path1'), 
+    document.getElementById('temp6-path2'), 
+    document.getElementById('temp6-path3')
+]
 
-const template1Paths = document.getElementsByClassName('temp-1-path');
-const template2Paths = document.getElementsByClassName('temp-2-path');
-const template3Paths = document.getElementsByClassName('temp-3-path');
-const template4Paths = document.getElementsByClassName('temp-4-path');
-const template5Paths = document.getElementsByClassName('temp-5-path');
-const template6Paths = document.getElementsByClassName('temp-6-path');
+
+//ID for hidden paths 
+
+const temp1Path1 = document.getElementById('temp1-path1');
 
 //Signatures 
 const signature1 = document.getElementById('signature1');
@@ -50,6 +78,12 @@ const signature3 = document.getElementById('signature3');
 const signature4 = document.getElementById('signature4');
 const signature5 = document.getElementById('signature5');
 const signature6 = document.getElementById('signature6');
+
+//Copy buttons
+
+const copySigBtn = document.getElementById('copy-sig-btn');
+const copySrcBtn = document.getElementById('copy-src-btn');
+
 
 // Check for clik events on the nav 
 
@@ -225,19 +259,169 @@ fsSlider.addEventListener('input', function(){
     };
 })
 
+template1Paths.forEach(path => path.classList.add('isHidden'))
+template2Paths.forEach(path => path.classList.add('isHidden'))
+template3Paths.forEach(path => path.classList.add('isHidden'))
+template4Paths.forEach(path => path.classList.add('isHidden'))
+template5Paths.forEach(path => path.classList.add('isHidden'))
+template6Paths.forEach(path => path.classList.add('isHidden'))
 
-/*const templates = [template1, template2, template3, template4, template5, template6];
-const templatePaths = [template1Paths, template2Paths, template3Paths, template4Paths, template5Paths, template6Paths]; 
+signature1.classList.add('isHidden')
+signature2.classList.add('isHidden');
+signature3.classList.add('isHidden');
+signature4.classList.add('isHidden');
+signature5.classList.add('isHidden');
+signature6.classList.add('isHidden');
 
-templates.forEach((template, index) => {
-    template.addEventListener('click', function(){
-        templatePaths[index].forEach(path => {
-            path.classList.remove('isHidden')
-        })
+let templates = [template1, template2, template3, template4, template5, template6]
+
+let templateMap = {
+    template1: template1Paths,
+    template2: template2Paths,
+    template3: template3Paths,
+    template4: template4Paths,
+    template5: template5Paths,
+    template6: template6Paths,
+}
+
+
+
+for(let i=0; i < templates.length; i++){
+    templates[i].addEventListener('click', function(){
+       /*if(templates[i] = templates[1]){
+        template1Paths.forEach(path => path.classList.remove('isHidden'))
+       } */
+
+        switch(templates[i]){
+            case templates[0]:
+                signature1.classList.remove('isHidden');
+                signature2.classList.add('isHidden');
+                signature3.classList.add('isHidden');
+                signature4.classList.add('isHidden');
+                signature5.classList.add('isHidden');
+                signature6.classList.add('isHidden');
+
+                template1Paths.forEach(path => path.classList.remove('isHidden'));
+                template2Paths.forEach(path => path.classList.add('isHidden'));
+                template3Paths.forEach(path => path.classList.add('isHidden'));
+                template4Paths.forEach(path => path.classList.add('isHidden'));
+                template5Paths.forEach(path => path.classList.add('isHidden'));
+                template6Paths.forEach(path => path.classList.add('isHidden'));
+
+                break;
+            case templates[1]:
+                signature1.classList.add('isHidden');
+                signature2.classList.remove('isHidden');
+                signature3.classList.add('isHidden');
+                signature4.classList.add('isHidden');
+                signature5.classList.add('isHidden');
+                signature6.classList.add('isHidden');
+
+                template1Paths.forEach(path => path.classList.add('isHidden'));
+                template2Paths.forEach(path => path.classList.remove('isHidden'));
+                template3Paths.forEach(path => path.classList.add('isHidden'));
+                template4Paths.forEach(path => path.classList.add('isHidden'));
+                template5Paths.forEach(path => path.classList.add('isHidden'));
+                template6Paths.forEach(path => path.classList.add('isHidden'));
+                break;
+            case templates[2]:
+                template3Paths.forEach(path => path.classList.toggle('isHidden'))
+                signature1.classList.add('isHidden');
+                signature2.classList.add('isHidden');
+                signature3.classList.remove('isHidden');
+                signature4.classList.add('isHidden');
+                signature5.classList.add('isHidden');
+                signature6.classList.add('isHidden');
+
+                template1Paths.forEach(path => path.classList.add('isHidden'));
+                template2Paths.forEach(path => path.classList.add('isHidden'));
+                template3Paths.forEach(path => path.classList.remove('isHidden'));
+                template4Paths.forEach(path => path.classList.add('isHidden'));
+                template5Paths.forEach(path => path.classList.add('isHidden'));
+                template6Paths.forEach(path => path.classList.add('isHidden'));
+                break;
+            case templates[3]:
+                template4Paths.forEach(path => path.classList.toggle('isHidden'))
+                signature1.classList.add('isHidden');
+                signature2.classList.add('isHidden');
+                signature3.classList.add('isHidden');
+                signature4.classList.remove('isHidden');
+                signature5.classList.add('isHidden');
+                signature6.classList.add('isHidden');
+
+                template1Paths.forEach(path => path.classList.add('isHidden'));
+                template2Paths.forEach(path => path.classList.add('isHidden'));
+                template3Paths.forEach(path => path.classList.add('isHidden'));
+                template4Paths.forEach(path => path.classList.remove('isHidden'));
+                template5Paths.forEach(path => path.classList.add('isHidden'));
+                template6Paths.forEach(path => path.classList.add('isHidden'));
+                break;
+            case templates[4]:
+            template5Paths.forEach(path => path.classList.toggle('isHidden'))
+                signature1.classList.add('isHidden');
+                signature2.classList.add('isHidden');
+                signature3.classList.add('isHidden');
+                signature4.classList.add('isHidden');
+                signature5.classList.remove('isHidden');
+                signature6.classList.add('isHidden');
+
+                template1Paths.forEach(path => path.classList.add('isHidden'));
+                template2Paths.forEach(path => path.classList.add('isHidden'));
+                template3Paths.forEach(path => path.classList.add('isHidden'));
+                template4Paths.forEach(path => path.classList.add('isHidden'));
+                template5Paths.forEach(path => path.classList.remove('isHidden'));
+                template6Paths.forEach(path => path.classList.add('isHidden'));
+            break;
+            case templates[5]:
+                template6Paths.forEach(path => path.classList.toggle('isHidden'))
+                signature1.classList.add('isHidden');
+                signature2.classList.add('isHidden');
+                signature3.classList.add('isHidden');
+                signature4.classList.add('isHidden');
+                signature5.classList.add('isHidden');
+                signature6.classList.remove('isHidden');
+
+                template1Paths.forEach(path => path.classList.add('isHidden'));
+                template2Paths.forEach(path => path.classList.add('isHidden'));
+                template3Paths.forEach(path => path.classList.add('isHidden'));
+                template4Paths.forEach(path => path.classList.add('isHidden'));
+                template5Paths.forEach(path => path.classList.add('isHidden'));
+                template6Paths.forEach(path => path.classList.remove('isHidden'));
+                break;
+                default: return;
+        }
+
+
     })
-})*/
+}
 
 
+const signatures = [signature1, signature2, signature3, signature4, signature5, signature6]
+
+const getVisibleSignature = () => {
+    return signatures.find( signature => !signature.classList.contains('isHidden'));
+}
+
+/*copySigBtn.addEventListener('click', () => {
+    const visibleSignature = getVisibleSignature()
+    if(visibleSignature){
+        const content = visibleSignature.outerHTML;
+        navigator.clipboard.writeText(content);
+        alert('Signature Copied');
+
+    }
+})*/ //COPY Div with Styles
+
+copySrcBtn.addEventListener('click', () => {
+    const visibleSignature = getVisibleSignature()
+    if(visibleSignature){
+        const content = visibleSignature.outerHTML;
+        navigator.clipboard.writeText(content);
+        alert('Source Code Copied');
+
+    }
+    
+}) //Copy Div Code
 
 
 
