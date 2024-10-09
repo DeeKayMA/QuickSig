@@ -306,6 +306,14 @@ input::placeholder {
     font-size: 1.6rem;
 }
 
+#CTA-colour{
+    margin-bottom: 2.4rem;
+}
+
+#CTA-text-colour{
+    margin-bottom: 2.4rem;
+}
+
 #textColourInputText,
 #linkColourInputText {
     margin-bottom: 0rem;

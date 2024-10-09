@@ -2,29 +2,54 @@
 
 //Get buttons & div areas
 
-let navbar = document.getElementById("navbar");
-let preview = document.getElementById("browser-window");
+const navbar = document.getElementById("navbar");
+const preview = document.getElementById("browser-window");
 
-let templateBtn = document.getElementById('template-btn');
-let detailBtn = document.getElementById('detail-btn');
-let styleBtn = document.getElementById('style-btn');
-let imagesBtn = document.getElementById('images-btn');
+const templateBtn = document.getElementById('template-btn');
+const detailBtn = document.getElementById('detail-btn');
+const styleBtn = document.getElementById('style-btn');
+const imagesBtn = document.getElementById('images-btn');
 
-let templateDiv = document.getElementById('template-div');
-let detailDiv = document.getElementById('detail-div');
-let styleDiv = document.getElementById('style-div');
-let imagesDiv = document.getElementById('images-div');
+const templateDiv = document.getElementById('template-div');
+const detailDiv = document.getElementById('detail-div');
+const styleDiv = document.getElementById('style-div');
+const imagesDiv = document.getElementById('images-div');
 
-let nextBtnTemplate = document.getElementById('next-btn-template');
-let prevBtnDetail = document.getElementById('prev-btn-detail');
-let nextBtnDetail = document.getElementById('next-btn-detail');
-let prevBtnStyle = document.getElementById('prev-btn-style');
-let nextBtnStyle = document.getElementById('next-btn-style');
-let prevBtnImages = document.getElementById('prev-btn-images');
-let nextBtnImages = document.getElementById('next-btn-images');
+const nextBtnTemplate = document.getElementById('next-btn-template');
+const prevBtnDetail = document.getElementById('prev-btn-detail');
+const nextBtnDetail = document.getElementById('next-btn-detail');
+const prevBtnStyle = document.getElementById('prev-btn-style');
+const nextBtnStyle = document.getElementById('next-btn-style');
+const prevBtnImages = document.getElementById('prev-btn-images');
+const nextBtnImages = document.getElementById('next-btn-images');
 
 const fsSlider = document.getElementById('fs-slider');
-let fsOutput = document.getElementById('fs-slider-output')
+const fsOutput = document.getElementById('fs-slider-output')
+
+//Paths to be hidden when template is clicked
+const template1 = document.getElementById('template1');
+const template2 = document.getElementById('template2');
+const template3 = document.getElementById('template3');
+const template4 = document.getElementById('template4');
+const template5 = document.getElementById('template5');
+const template6 = document.getElementById('template6');
+
+//Class for hidden paths
+
+const template1Paths = document.getElementsByClassName('temp-1-path');
+const template2Paths = document.getElementsByClassName('temp-2-path');
+const template3Paths = document.getElementsByClassName('temp-3-path');
+const template4Paths = document.getElementsByClassName('temp-4-path');
+const template5Paths = document.getElementsByClassName('temp-5-path');
+const template6Paths = document.getElementsByClassName('temp-6-path');
+
+//Signatures 
+const signature1 = document.getElementById('signature1');
+const signature2 = document.getElementById('signature2');
+const signature3 = document.getElementById('signature3');
+const signature4 = document.getElementById('signature4');
+const signature5 = document.getElementById('signature5');
+const signature6 = document.getElementById('signature6');
 
 // Check for clik events on the nav 
 
@@ -199,3 +224,21 @@ fsSlider.addEventListener('input', function(){
         fsOutput.value = "Medium"
     };
 })
+
+
+/*const templates = [template1, template2, template3, template4, template5, template6];
+const templatePaths = [template1Paths, template2Paths, template3Paths, template4Paths, template5Paths, template6Paths]; 
+
+templates.forEach((template, index) => {
+    template.addEventListener('click', function(){
+        templatePaths[index].forEach(path => {
+            path.classList.remove('isHidden')
+        })
+    })
+})*/
+
+
+
+
+
+
