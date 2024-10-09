@@ -12,7 +12,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M77 273H311C313.761 273 316 275.239 316 278C316 280.761 313.761 283 311 283H77C74.2386 283 72 280.761 72 278C72 275.239 74.2386 273 77 273Z" fill="#CBD6E2"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M77 298H311C313.761 298 316 300.239 316 303C316 305.761 313.761 308 311 308H77C74.2386 308 72 305.761 72 303C72 300.239 74.2386 298 77 298Z" fill="#CBD6E2"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M78 323H312C314.761 323 317 325.239 317 328C317 330.761 314.761 333 312 333H78C75.2386 333 73 330.761 73 328C73 325.239 75.2386 323 78 323Z" fill="#CBD6E2"/>
-<rect width="540" height="393" rx="8" fill="#181251" fill-opacity="0.5"/>
+<rect width="540" height="393" rx="8" fill="#181251" fill-opacity="0.25"/>
 <path d="M270 261C305.346 261 334 232.346 334 197C334 161.654 305.346 133 270 133C234.654 133 206 161.654 206 197C206 232.346 234.654 261 270 261Z" fill="#CA4655"/>
 <path d="M295.925 176.778L259.666 213.036L243.185 196.555" stroke="white" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
 </g>

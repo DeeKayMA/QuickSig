@@ -66,6 +66,10 @@ body {
     flex-direction: row;
 }
 
+.template-group{
+    flex-direction: column;
+}
+
 
 
 
@@ -244,6 +248,7 @@ input::placeholder {
 .template {
     width: 100%;
     margin-bottom: 4.0rem;
+    cursor: pointer;
 
 }
 
@@ -643,5 +648,20 @@ a.diquan {
 
     .prev-btn:hover {
         background-color: #d0d3d4;
+    }
+}
+
+@media only screen and (min-width:550px) and (max-width:968px){
+    .template-group{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.6rem;
+    }
+    .template-group .template{
+       width: calc(50% - 0.8rem);
+       margin-bottom: 2.0rem; /* Desktop and mobile is set at 4.0rem*/
+    }
+    .input-fields{
+        padding: 3.2rem;
     }
 }
